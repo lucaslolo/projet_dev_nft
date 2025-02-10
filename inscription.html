@@ -17,26 +17,37 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="brocanteurs.html">Brocanteurs</a></li>
-                <li><a href="#" style="color : black;">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Objets</a></li>
             </ul>
         </div>
         <div class="authentification-container">
             <ul>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
+              <li><a href="#" style="color : black;">Inscription</a></li>
+              <li><a href="connexion.html">Connexion</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <h1>Formulaire de contact</h1>
+        <h1>Formulaire d'inscription</h1>
 
-        <form id="contactForm" action="index.html"> <!--action="#" onsubmit="alert('Votre demande a bien été envoyée.'); return false;"-->
+        <form id="inscriptionForm" action="index.html">
+          <input type="text" placeholder="Nom" required>
+          <input type="text" placeholder="Prénom" required>
           <input type="email" placeholder="Adresse e-mail" required>
-          <input type="text" placeholder="Objet" required>
-          <textarea placeholder="Décrivez votre problème..." rows="4" required></textarea>
-          <button type="submit">Valider</button>
+          <input type="password" placeholder="Mot de passe" required>
+          <input type="password" placeholder="Confirmer le mot de passe" required>
+          <textarea placeholder="Description" rows="4"></textarea>
+          <input type="file" accept="image/*">
+          <label>
+            Visible sur le site :
+            <select required>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </label>
+          <button type="submit">S'inscrire</button>
         </form>
     </main>
 
