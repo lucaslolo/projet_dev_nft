@@ -32,6 +32,7 @@
     <main>
         <h1>Formulaire d'inscription</h1>
 
+        <!--Formulaire d'inscription-->
         <form id="inscriptionForm" action="index.html">
           <input type="text" placeholder="Nom" required>
           <input type="text" placeholder="Prénom" required>
@@ -48,7 +49,17 @@
             </select>
           </label>
           <button type="submit">S'inscrire</button>
+          <p>Vous avez déjà un compte ? <a href="connexion.html">Connectez-vous ici</a></p>
         </form>
+
+        <!--confirmation message-->
+        <div id="confirmationMessage" style="display:none;">
+          <p>Votre inscription a été réussie !</p>
+          <p>Numéro de compte pour le paiement :</p> <!--<span id="accountNumber"></span>-->
+          <p>Montant :</p> <!--<span id="amount"></span>-->
+          <p>Communication :></span></p><!--<span id="communication"-->
+        </div>
+
     </main>
 
     <footer>
